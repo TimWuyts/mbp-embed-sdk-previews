@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Afspraak maken</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Reden van de afspraak *</legend>
+
+        <div>
+          <textarea id="reason" name="reason" required rows="4"></textarea>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Waar?</legend>
+
+        <div>
+          <label for="location">Locatie *</label>
+          <input id="location" name="location" required />
+        </div>
+
+        <div>
+          <label for="address">Adres</label>
+          <input id="address" name="address" />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Wanneer?</legend>
+
+        <div>
+          <label for="date">Datum *</label>
+          <input type="date" id="date" name="date" required />
+        </div>
+
+        <div>
+          <label for="time">Tijdstip</label>
+          <input type="time" id="time" name="time" />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Persoonsgegevens</legend>
+
+        <div>
+          <label for="firstName">Voornaam</label>
+          <input id="firstName" name="firstName" />
+        </div>
+
+        <div>
+          <label for="lastName">Achternaam</label>
+          <input id="lastName" name="lastName" />
+        </div>
+      </fieldset>
+      <button id="submit" role="submit">Afspraak bevestigen</button>
+      <button id="cancel" role="button">Afspraak annuleren</button>
+    </form>
+  </body>
+</html>

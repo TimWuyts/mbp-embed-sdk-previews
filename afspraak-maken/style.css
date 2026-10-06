@@ -1,0 +1,71 @@
+:root {
+  --c-action: #222;
+  --c-primary: deeppink;
+}
+
+body {
+  padding: 20px;
+  font-family:
+    Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium',
+    'Nimbus Sans Narrow', sans-serif-condensed, sans-serif;
+  font-weight: normal;
+}
+
+fieldset {
+  margin: 40px 0;
+  border: 0 solid transparent;
+  border-top: 3px solid var(--c-primary);
+}
+
+legend {
+  font-weight: bold;
+  font-variant: small-caps;
+  height: auto;
+  margin: 15px auto;
+  padding: 0 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+textarea,
+input {
+  display: block;
+  min-height: 24px;
+  width: 100%;
+}
+
+fieldset > div + div {
+  margin-top: 10px;
+}
+
+button {
+  font-family: inherit;
+  font-weight: bold;
+  background-color: var(--c-action);
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  border: 2px solid var(--c-action);
+  border-radius: 15px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button:hover,
+button:active {
+  opacity: 0.95;
+  outline: 1px solid black;
+  filter: brightness(1.1);
+}
+
+button:active {
+  opacity: 0.9;
+}
+
+#cancel {
+  float: right;
+  background-color: transparent;
+  color: var(--c-action);
+}
