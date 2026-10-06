@@ -16,10 +16,10 @@ const client = createMbpEmbedClient('03a082cd-0249-43fd-8197-37ba56770f4d', {
   allowedHosts: [
     'http://localhost:*',
     'http://127.0.0.1:*',
-    'https://admin.test-vlaanderen.be',
-    'https://admin.beta-vlaanderen.be',
-    'https://admin.tni-vlaanderen.be',
-    'https://admin.vlaanderen.be',
+    'https://partnerportaal.test-vlaanderen.be',
+    'https://partnerportaal.beta-vlaanderen.be',
+    'https://partnerportaal.tni-vlaanderen.be',
+    'https://partnerportaal.vlaanderen.be',
   ],
 });
 
